@@ -1,0 +1,32 @@
+.branding .row{
+    max-width: 114rem;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: space-around;
+    
+}
+
+
+
+.branding{
+    margin-top: 3rem;
+    text-align: center;
+    height: 20rem;
+    margin-bottom: 6rem;
+}
+.branding h3{
+    
+    font-size: 2.3rem;
+    font-weight: 900;
+    font-family: poppins;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+
+}
+.branding p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: rgb(70, 67, 67);
+
+}

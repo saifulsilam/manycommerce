@@ -1,0 +1,17 @@
+.products{
+    height: 100vh;
+    display: flex;
+    background-color: black;
+    color:white
+
+}
+.filters{
+    background-color: rgb(155, 147, 76);
+    color: black;
+}
+.ProductContainer{
+    width: 78%;
+    background-color: brown;
+    padding: 2rem;
+    margin: 2rem;
+}
