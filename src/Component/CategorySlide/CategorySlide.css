@@ -1,0 +1,58 @@
+.category-brand .row{
+    max-width:968px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.category-brand .row .span_1_of_3{
+    flex-basis: 25;
+    margin-left: 1rem;
+}
+
+.category-brand{
+    width: 80%;
+    margin-left: 10%;
+    background: #f0e8e8;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+.category-brand a{
+    text-decoration: none;
+    margin-left: 1rem;
+    display: block;
+    font-size: 1.5rem;
+    color: rgba(255, 47, 47, 0.787);
+    font-weight: bold;
+}
+.category-brand .arrow_right{
+    padding-left: 0.3rem;
+    color: black;
+}
+.category-brand .arrow_text{
+    margin-top: -2rem;
+    text-align: center;
+}
+.category-brand a h3{
+    text-decoration: none;
+    margin-top: 4rem;
+    display: block;
+    font-size: 1.9rem;
+    color: rgba(0, 0, 0, 0.979);
+    font-family: poppins;
+    font-weight: 200;
+}
+.category-brand a h3:hover{
+    color: black;
+}
+.category-brand a img{
+  
+    width: 20rem;
+    height: 16rem;
+}
+.category-brand a img:hover{
+    width: 22rem;
+    height: 18rem;
+    transition: 1s;
+}

@@ -1,0 +1,92 @@
+.trendy_product{
+    padding-top: 3rem;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+.trendy_product .header{
+    text-align: center;
+}
+.trendy_product .sec_title{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.trendy_product .little_des{
+    font-size: 1.6rem;
+    margin-top: -2rem;
+    margin-bottom: 5rem;
+}
+
+.trendy_content{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 114rem;
+    margin: 0 auto;
+    padding-left: 5rem;
+}
+.trendy_content .trend_col{
+    width: 25rem;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+}
+.trend_col img{
+    width: 25rem;
+    height: 25rem;
+}
+.trend_col h4{
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    
+}
+.trendy_attribute{
+    margin-top: -2rem;
+}
+.price_tag{
+    display: flex;
+    margin-top: 2rem;
+}
+.price_tag .old_price{
+   padding: 0.2rem 1rem;
+   background-color: yellow;
+   text-decoration: line-through;
+   font-size: 1.7rem;
+   font-weight: 700;
+}
+.price_tag .current_price{
+    padding-left: 1rem;
+    font-size: 1.7rem;
+    color: black;
+    font-weight: 700;
+ }
+
+.trendy_attribute .ratings{
+    color: rgb(255, 238, 0);
+    font-size: 3rem;
+    margin-top: -1rem;
+    margin-left: -0.2rem;
+    flex-basis: 20;
+    margin-bottom: 0.1rem;
+    line-height: 2rem;
+
+}
+.trendy_attribute .addCart{
+ padding: 0.5rem 2rem;
+ font-size: 1.2rem;
+ font-weight: 700;
+
+ border-radius: 0.5rem;
+ background-color: antiquewhite;
+ text-transform: uppercase;
+ cursor: pointer;
+ border-color: antiquewhite;;
+}
+.trendy_attribute .addCart:hover{
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    background-color: rgb(230, 187, 132);
+    color: white;
+    
+   }
+
+
