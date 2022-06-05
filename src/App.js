@@ -5,6 +5,7 @@ import Blog from "./Pages/Blogs";
 import Contact from "./Pages/Contact";
 import Product from "./Pages/Products";
 import Footer from "./Component/Footer";
+import Cart from "./Component/Cart";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/blog" element={<Blog/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/product" element={<Product/>} />
+        <Route path="/cart" element={<Cart/>} />
         {/* <Route path="/about" element={<About/>} /> */}
 
         {/* Error 404  */}

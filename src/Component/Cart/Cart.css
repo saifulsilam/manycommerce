@@ -1,0 +1,84 @@
+.cart{
+    text-align: center;
+}
+.cart .go-back{
+    text-decoration: none;
+}
+.cart_line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 5rem;
+    
+}
+
+.cart-item{
+    width: 70%;
+    
+}
+.cart-page td{
+    font-size: 2rem;
+}
+.cart-page h4{
+    font-size: 1.4rem;
+}
+.cart-sum{
+    margin-top: 3rem;
+    width: 20%;  
+    margin-right: 4rem; 
+}
+.cart-sum td{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.cart-item h4{
+    margin-bottom: -0.9rem;
+}
+.cart-sum button{
+    margin: 2rem;
+    padding: 0.9rem 1rem;
+    background-color: rgb(253, 237, 17);
+}
+
+.cart-item button{
+    background-color: #ff6767;
+    border: none;
+}
+.cart-page tr>td{
+  padding-left: 5rem;
+}
+
+.cart-item img{
+    width: 7rem;
+    height: 7rem;
+}
+.cart-item .sum-div table th,
+.cart-item table td{
+    text-align: center;
+}
+
+td input{
+    width: 4rem;
+    height: 3rem;
+    padding: 0.5rem;
+}
+
+.sum-div table{
+    border-top: 3px solid #4e1c1c;
+    width: 100%;
+    max-width: 35rem;
+}
+td:last-child{
+    text-align: center;
+}
+th:last-child{
+    text-align: center;
+}
+td a{
+    margin-top: 0.5rem;
+    text-decoration: none;
+    padding: 0.1rem 0.5rem;
+    background-color: #ee1717;
+    color: #fff;
+    overflow: hidden;
+}

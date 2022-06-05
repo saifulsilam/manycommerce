@@ -1,17 +1,53 @@
 .products{
-    height: 100vh;
     display: flex;
-    background-color: black;
-    color:white
-
 }
 .filters{
-    background-color: rgb(155, 147, 76);
-    color: black;
+    width: 20%;
+    background-color: antiquewhite;
+    margin-top: 5rem;
+    margin-left: 3rem;
+    padding-left: 2rem;
+    padding-top: 3rem;
+    height: 30rem;
+}
+.filter .title{
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.filter .filter_item{
+    font-size: 1.5rem;
+    color: red;
+    margin-top: 1rem;
+  
+}
+.filter input{
+    cursor: pointer;
+}
+.filter button{
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    background-color: bisque;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+.filter button:hover{
+    font-size: 1.5rem;
 }
 .ProductContainer{
-    width: 78%;
-    background-color: brown;
-    padding: 2rem;
+    width: 80%;
+    display:flex;
     margin: 2rem;
+    flex-wrap: wrap;
+    margin-top: 4rem; 
+}
+
+.ProductContainer .trend_col{
+    margin: 1rem;
+    width: 20rem;
+    margin-bottom: 2rem;
+
+}
+.ProductContainer .trend_col img{
+    width: 20rem;
 }

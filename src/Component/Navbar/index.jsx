@@ -1,8 +1,14 @@
 import './Navbar.css';
 import { FaRegHeart, FaRegUser, FaSearch, FaShoppingCart } from "react-icons/fa";
 import Logo from '../../images/logo.png';
-import { NavLink as Link, NavLink } from 'react-router-dom';
+import { NavLink as NavLink } from 'react-router-dom';
+import {CartState} from '../../Context/Context'
 const Navbar =()=>{
+    const {
+        state: { cart },
+        dispatch,
+        productDispatch,
+      } = CartState();
     return (
         <>
                 {/* Header Section  */}
@@ -21,7 +27,6 @@ const Navbar =()=>{
                     
                     <li><NavLink to ='/wishlist'  className='navb'><FaRegHeart/> Wishlist</NavLink></li>
                     <li><NavLink to ='/account' ><FaRegUser/> Account</NavLink></li>
-                    
                 </ul>
             </div>
     
@@ -47,7 +52,7 @@ const Navbar =()=>{
             <div class="col span_1_of_3 search">
             
             <FaSearch/>Search
-             <FaShoppingCart/><sup>(2)</sup>
+             <NavLink to="/cart"><FaShoppingCart/></NavLink><sup>{cart.length}</sup>
             </div> 
         </div>
    

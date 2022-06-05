@@ -1,7 +1,8 @@
 import { Filter, TopFilter } from "../../Component/Filter";
 import ProductSection from "../../Component/ProductSection";
 import { CartState } from "../../Context/Context";
-import './main.css'
+import './main.css';
+import {HeroSectionOne} from '../../Component/HeroSection'
 const Product = ()=>{
     const {
         state : {products},
@@ -9,10 +10,11 @@ const Product = ()=>{
 
     } =CartState();
 
+    console.log(sort);
    
-    let sortedProducts = products;
+    
     const filteredProducts=()=>{
-      
+      let sortedProducts = products;
         if(sort){
           sortedProducts = sortedProducts.sort((a,b)=>
             sort === "lowToHigh" ? a.price-b.price : b.price-a.price 
@@ -32,23 +34,26 @@ const Product = ()=>{
         }
         return sortedProducts;
     };
+  
     return(
         <>
-           <section className="products">
-               
-               <div className="filters">
-                 <Filter />  
-               </div>
-                  
+           <section className="product">
+             <HeroSectionOne />
+             <div className="products">
+                <div className="filters">
+                  <Filter />  
+                </div>
+                    
                 <div className="ProductContainer">
-                    {
-                        sortedProducts.map((prod)=>(
-                        <ProductSection prod={prod}/>
+                      {
+                      filteredProducts().map((prod)=>(
+                          <ProductSection prod={prod}/>
                         ))
-                        
-                    }
-                  
-                </div>   
+                        }
+                    
+                </div> 
+             </div>
+                
            </section>
         </>
     );
