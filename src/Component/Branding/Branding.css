@@ -1,3 +1,4 @@
+
 .branding .row{
     max-width: 114rem;
     display: flex;
@@ -30,3 +31,16 @@
     color: rgb(70, 67, 67);
 
 }
+
+.branding .row{
+    max-width: 114rem;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: space-around;
+    
+}
+
+
+
+

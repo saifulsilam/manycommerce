@@ -1,3 +1,4 @@
+
 const Featured_card = [
     {
         id:1,
@@ -68,5 +69,6 @@ const Featured_card = [
   
 
 ]
+
 
 export default Featured_card ;

@@ -1,3 +1,4 @@
+
 import './HeroSection.css';
 import heroimage from '../../images/hero_image.png'
 export const HeroSection = ()=>{
@@ -39,4 +40,3 @@ export const HeroSectionOne = ()=>{
            </>
     );
 }
-  

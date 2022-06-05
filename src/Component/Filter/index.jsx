@@ -1,3 +1,4 @@
+
 import React from 'react';
  import { CartState } from '../../Context/Context';
 
@@ -15,59 +16,52 @@ export const Filter = () => {
     return (
       <div className='filter'>
           <span className='title'>Filter Products</span>
-          <hr/>
           <span>
-                <div className="filter_item">
-                  <input type="radio" id="filter" name="dcending" onChange={()=>
-                    productDispatch({
-                      type:"SORT_BY_PRICE",
-                      payload:"lowToHigh"
-                    })
-                  } 
-                    checked={sort === "lowToHigh" ? true : false}  
-                  />
-                <label>Ascending</label><br/>
-                </div>
-                <div className="filter_item">
-                  <input type="radio" id="filter" name="decending" onChange={()=>
-                  productDispatch({
-                    type:"SORT_BY_PRICE",
-                    payload:"highToLow"
-                  })} 
-                  checked={sort==="highToLow" ? true : false}  
-                />
-                <label>Decending</label><br/>
-                </div>
-                <div className="filter_item">
-                  <input type="checkbox" id="filter" name="decending" onChange={()=>
-                  productDispatch({
-                    type:"FILTER_BY_STOCK",
-                  })} 
-                  checked={byStock}  
-                  />
-                  <label>Include Out of Stock</label><br/>
-                </div>
-                <div className="filter_item">
-                  <input type="checkbox" id="filter" name="decending" onChange={()=>
-                  productDispatch({
-                    type:"FILTER_BY_DELIVERY",
-                  })} 
-                  checked={byFastDelivery}  
-                  />
-                  <label>Fast Delivery Only</label><br/>
-                  </div>
-                  <div className="filter_item">
-                    <button onClick={() =>
-                        productDispatch({
-                        type: "CLEAR_FILTERS",
-                      
-                      })
-                      }>
-                        CLEAR FILTERS</button>
-                </div>
-          </span>
+          <form>
+               <input type="radio" id="filter" name="decending" onChange={()=>
+                productDispatch({
+                  type:"SORT_BY_PRICE",
+                  payload:"lowToHigh"
+                })} 
+                checked={sort==="lowToHigh" ? true : false}  
+               />
+               <label>Ascending</label><br/>
+               <input type="radio" id="filter" name="decending" onChange={()=>
+                productDispatch({
+                  type:"SORT_BY_PRICE",
+                  payload:"highToLow"
+                })} 
+                checked={sort==="highToLow" ? true : false}  
+               />
+               <label>Decending</label><br/>
+
+               <input type="checkbox" id="filter" name="decending" onChange={()=>
+                productDispatch({
+                  type:"FILTER_BY_STOCK",
+                })} 
+                checked={byStock}  
+               />
+               <label>Include Out of Stock</label><br/>
+
+               <input type="checkbox" id="filter" name="decending" onChange={()=>
+                productDispatch({
+                  type:"FILTER_BY_DELIVERY",
+                })} 
+                checked={byFastDelivery}  
+               />
+               <label>Fast Delivery Only</label><br/>
+
+               <button onClick={() =>
+          productDispatch({
+            type: "CLEAR_FILTERS",
+          })
+        }>CLEAR FILTERS</button>
+
           
+            </form>
+          </span>
       </div>
     )
   }
+
 

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import './FeaturedProduct.css';
 import Featured_card from "./data";
@@ -33,4 +34,5 @@ import Featured_card from "./data";
     </>
   )
 }
+
 export default FeaturedProduct;

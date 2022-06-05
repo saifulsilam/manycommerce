@@ -1,3 +1,4 @@
+
 import catItem1 from '../../images/cat_item1.png';
 import catItem2 from '../../images/cat_item2.png';
 import catItem3 from '../../images/cat_item3.png';
@@ -32,4 +33,5 @@ import {NavLink} from 'react-router-dom';
         </>
     );
 }
+
 export default CategorySlide;

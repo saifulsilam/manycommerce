@@ -1,3 +1,4 @@
+
 const Product_card = [
     {
         id:1,
@@ -84,5 +85,6 @@ const Product_card = [
 
     // }
 ]
+
 
 export default Product_card ;

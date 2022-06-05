@@ -1,3 +1,4 @@
+
 import './Navbar.css';
 import { FaRegHeart, FaRegUser, FaSearch, FaShoppingCart } from "react-icons/fa";
 import Logo from '../../images/logo.png';
@@ -62,4 +63,5 @@ const Navbar =()=>{
         </>
     );
 }
+
 export default Navbar;

@@ -1,3 +1,4 @@
+
 import {HeroSection , HeroSectionOne}from "../Component/HeroSection";
 import Navbar from "../Component/Navbar";
 import  TrendyProduct  from "../Component/TrendyProduct";
@@ -20,4 +21,5 @@ const Home = ()=>{
         </>
     );
 }
+
 export default Home ; 
