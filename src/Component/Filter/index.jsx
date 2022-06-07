@@ -1,6 +1,7 @@
 
 import React from 'react';
  import { CartState } from '../../Context/Context';
+ import './Filter.css'
 
 export const TopFilter = () => {
   return (
@@ -17,8 +18,8 @@ export const Filter = () => {
       <div className='filter'>
           <span className='title'>Filter Products</span>
           <span>
-          <form>
-               <input type="radio" id="filter" name="decending" onChange={()=>
+         <div className="filter_items">
+         <input type="radio" id="filter" name="decending" onChange={()=>
                 productDispatch({
                   type:"SORT_BY_PRICE",
                   payload:"lowToHigh"
@@ -26,7 +27,10 @@ export const Filter = () => {
                 checked={sort==="lowToHigh" ? true : false}  
                />
                <label>Ascending</label><br/>
-               <input type="radio" id="filter" name="decending" onChange={()=>
+         </div>
+         <div className="filter_items">
+            
+         <input type="radio" id="filter" name="decending" onChange={()=>
                 productDispatch({
                   type:"SORT_BY_PRICE",
                   payload:"highToLow"
@@ -34,8 +38,10 @@ export const Filter = () => {
                 checked={sort==="highToLow" ? true : false}  
                />
                <label>Decending</label><br/>
-
-               <input type="checkbox" id="filter" name="decending" onChange={()=>
+         </div>
+         <div className="filter_items">
+           
+         <input type="checkbox" id="filter" name="decending" onChange={()=>
                 productDispatch({
                   type:"FILTER_BY_STOCK",
                 })} 
@@ -43,22 +49,30 @@ export const Filter = () => {
                />
                <label>Include Out of Stock</label><br/>
 
-               <input type="checkbox" id="filter" name="decending" onChange={()=>
+         </div>
+         <div className="filter_items">
+         <input type="checkbox" id="filter" name="decending" onChange={()=>
                 productDispatch({
                   type:"FILTER_BY_DELIVERY",
                 })} 
                 checked={byFastDelivery}  
                />
                <label>Fast Delivery Only</label><br/>
-
-               <button onClick={() =>
+         </div>
+         <div className="filter_items">
+           
+         <button onClick={() =>
           productDispatch({
             type: "CLEAR_FILTERS",
           })
         }>CLEAR FILTERS</button>
+         </div>
+              
+
+      
 
           
-            </form>
+           
           </span>
       </div>
     )

@@ -26,8 +26,8 @@ const Navbar =()=>{
             <div class="col span_1_of_2">
                 <ul class="right-top">
                     
-                    <li><NavLink to ='/wishlist'  className='navb'><FaRegHeart/> Wishlist</NavLink></li>
-                    <li><NavLink to ='/account' ><FaRegUser/> Account</NavLink></li>
+                    <li><NavLink to ='/wishlist'  className='navLink'><FaRegHeart/> Wishlist</NavLink></li>
+                    <li><NavLink to ='/account'  className='navLink'><FaRegUser/> Account</NavLink></li>
                 </ul>
             </div>
     
@@ -42,18 +42,18 @@ const Navbar =()=>{
                 </div>
             <div class="col span_1_of_3 menus">
                 <ul class="main-menu">
-                    <li><NavLink to ='/' >Home</NavLink></li>
-                    <li><NavLink to ='/pages' >Pages</NavLink></li>
-                    <li><NavLink to ='/blog' >Blogs</NavLink></li>
-                    <li><NavLink to ='/product' >Products</NavLink></li>
-                    <li><NavLink to ='/contact' >Contact</NavLink></li>
+                    <li><NavLink to ='/'  className='navLink'>Home</NavLink></li>
+                    <li><NavLink to ='/pages'  className='navLink'>Pages</NavLink></li>
+                    <li><NavLink to ='/blog'  className='navLink'>Blogs</NavLink></li>
+                    <li><NavLink to ='/product'  className='navLink'>Products</NavLink></li>
+                    <li><NavLink to ='/contact'  className='navLink'>Contact</NavLink></li>
                 </ul>
               
             </div>
             <div class="col span_1_of_3 search">
             
             <FaSearch/>Search
-             <NavLink to="/cart"><FaShoppingCart/></NavLink><sup>{cart.length}</sup>
+             <NavLink to="/cart"  className='navLink'><FaShoppingCart/></NavLink><sup>{cart.length}</sup>
             </div> 
         </div>
    

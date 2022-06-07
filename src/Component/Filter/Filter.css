@@ -1,0 +1,9 @@
+.filter .title{
+    color: black;
+}
+.filter .filter_items{
+    color: red;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+}

@@ -10,45 +10,41 @@ const Product = ()=>{
 
     } =CartState();
 
-   
-    let sortedProducts = products;
+   console.log(products);
     const filteredProducts=()=>{
-      
-        if(sort){
-          sortedProducts = sortedProducts.sort((a,b)=>
-            sort === "lowToHigh" ? a.price-b.price : b.price-a.price 
-            );
-        }
-        if (!byStock) {
-            sortedProducts = sortedProducts.filter((prod) => prod.inStock);
-          }
-        if (byFastDelivery) {
-          sortedProducts = sortedProducts.filter((prod) => prod.fastDelivery);
-          }
-
-          if (searchQuery) {
-            sortedProducts = sortedProducts.filter((prod) =>
-              prod.name.toLowerCase().includes(searchQuery)
-            );
-        }
-        return sortedProducts;
-    };
+      let sortedProducts = products;
+      if (sort) {
+        sortedProducts = sortedProducts.sort((a, b) =>
+          sort === "lowToHigh" ? a.price - b.price : b.price - a.price
+        );
+      }
+  
+      if (!byStock) {
+        sortedProducts = sortedProducts.filter((prod) => prod.inStock);
+      }
+      if (byFastDelivery) {
+        sortedProducts = sortedProducts.filter((prod) => prod.fastDelivery);
+      }
+  
+      if (searchQuery) {
+        sortedProducts = sortedProducts.filter((prod) =>
+          prod.name.toLowerCase().includes(searchQuery)
+        );
+      }
+      return sortedProducts;
+      };
     return(
         <>
            <section className="products">
-               
                <div className="filters">
                  <Filter />  
                </div>
                   
                 <div className="ProductContainer">
-                    {
-                        sortedProducts.map((prod)=>(
-                        <ProductSection prod={prod}/>
-                        ))
-                        
-                    }
-                  
+                {filteredProducts().map((prod) => (
+                  <ProductSection prod={prod} key={prod.id} />
+                ))}
+  
                 </div>   
            </section>
         </>

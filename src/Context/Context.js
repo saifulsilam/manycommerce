@@ -17,6 +17,7 @@ const Context= ({children}) =>{
         catagory:item.category,
         inStock: item.inStock,
         fastDelivery: item.fastDelivery,
+        HomeCategory:item.HomeCategory,
         
     }));
     

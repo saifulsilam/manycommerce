@@ -1,17 +1,27 @@
 .products{
-    height: 100vh;
     display: flex;
-    background-color: black;
+   
     color:white
 
 }
 .filters{
-    background-color: rgb(155, 147, 76);
-    color: black;
+   height: 30rem;
+   background-color: antiquewhite;
+   margin-top: 5rem;
+   width: 20%;
+   margin-left: 2rem;
+   padding-left: 2rem;
+   
 }
 .ProductContainer{
-    width: 78%;
-    background-color: brown;
     padding: 2rem;
     margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ProductContainer .trend_col{
+    margin: 1rem;
+}
+.trend_col h4{
+    color: black;
 }

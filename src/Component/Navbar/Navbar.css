@@ -6,8 +6,10 @@ html{
 }
 header{
     max-width: 114rem;
+   
     
 }
+
 /* Top Navbar */
 .top-navbar .row{
     display: flex;
@@ -16,6 +18,7 @@ header{
     margin-left: 7rem;
     font-family: Poppins;
     font-size: 1.4rem;
+    
 }
  li{
     display: inline-block;
@@ -31,15 +34,13 @@ hr .border{
     margin-right: 7rem;
     margin-left: 7rem;
     justify-content: space-between;
+    margin-bottom: 3rem;
 }
 .main-navbar .logo{
     flex-basis: 20;
     padding-left: 2.4rem;
 }
-NavLink{
-    text-decoration: none;
-    color: red;
-}
+
 .main-navbar .menus{
     flex-basis: 40;
     align-items: flex-start;
@@ -67,3 +68,19 @@ NavLink{
     text-decoration: none;
 
 }
+.navLink{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    cursor: pointer;
+}
+.navLink:hover{
+    color: red;
+    cursor: pointer;
+}
+.navLink:active{
+    color: red;
+}
+
+
+

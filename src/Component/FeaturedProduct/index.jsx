@@ -2,15 +2,25 @@
 import React from 'react';
 import './FeaturedProduct.css';
 import Featured_card from "./data";
+import { CartState } from '../../Context/Context';
 
  const FeaturedProduct = () => {
+  const {
+    state:{products},
+  
+  }= CartState();
+  const FeaturedProduct = products.filter(function(item){
+    let productCat="featured"
+    return item.HomeCategory === productCat ;
+  })
+  
   let ratings='****';
    
-    const listItem = Featured_card.map((item)=>(
+    const listItem = FeaturedProduct.map((item)=>(
     
         <div class="featured_col" key={item.id}> 
-          <img src={item.thumb} alt="" />
-            <h3 class="title">{item.title}</h3>
+          <img src={item.image} alt="" />
+            <h3 class="title">{item.name}</h3>
             <div className='price_tag'>
             <p class="old-price">{item.currency}{item.old_price}</p>
             <p class="price">{item.currency}{item.price}</p> 
