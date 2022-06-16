@@ -15,16 +15,15 @@ const ProductSection = ({prod}) => {
   return (
     <div>
        <div class="trend_col" key={prod.id}>
-            <div>
+            <div className='container'>
               <img src={prod.image} alt=""/>
-              <Link className='productTitle' to={`/singlepost/${prod.id}`}><h4>{prod.name}</h4></Link>
-              
-              
+              <div class="top-left"><p class="old_price">{prod.currency}{prod.old_price}</p></div>
             </div>
+            <Link className='productTitle' to={`/singlepost/${prod.id}`}><h4>{prod.name}</h4></Link>
               
             <div class="trendy_attribute">
                 <div class="price_tag">
-                  <p class="old_price">{prod.currency}{prod.old_price}</p>
+                  
                   <p class="current_price">{prod.currency}{prod.price}</p>
                   {prod.fastDelivery ? (
                   <div className='fast_delivery'>Fast Delivery</div>

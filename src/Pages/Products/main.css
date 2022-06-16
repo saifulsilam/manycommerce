@@ -2,8 +2,6 @@
     display: flex;
     color:white;
    background-color: rgb(255, 255, 255);
-
-
 }
 .filters{
    height: 50rem;
@@ -66,3 +64,20 @@
     margin-top: 1.5rem;
     margin-left: 6rem;
 }
+.trend_col .container {
+    position: relative;
+    text-align: center;
+    color: black;
+  }
+  
+  .trend_col .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  .ProductContainer .trend_col .old_price{
+    text-decoration: line-through;
+    background-color: yellow;
+    color: black;
+    font-size: 1.7rem;
+  }
