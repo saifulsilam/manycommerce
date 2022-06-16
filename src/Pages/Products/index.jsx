@@ -9,8 +9,7 @@ const Product = ()=>{
         productState : {sort,byStock,byFastDelivery, searchQuery },
 
     } =CartState();
-
-   console.log(products);
+    console.log("from product " + products)
     const filteredProducts=()=>{
       let sortedProducts = products;
       if (sort) {

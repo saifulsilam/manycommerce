@@ -1,7 +1,7 @@
 
 import React from 'react';
 import './trendyProduct.css';
-import Product_card from "./data";
+
 import { CartState } from '../../Context/Context';
 import Tsection from './Tsection'
 

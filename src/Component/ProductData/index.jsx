@@ -1,9 +1,8 @@
 
 const products= [
-  
         {
             id:1,
-            name : "Bottle MockUp-PS0 Version-1.0 ",
+            name : "Bottle MockUp-PS0 Version-1.0 Version-1.0 ",
             description: "lorem ipsum ",
             price:50,
             old_price: 450,
@@ -11,7 +10,7 @@ const products= [
             image: "./images/img1.png",
             category:"men",
             inStock: 4,
-            fastDelivery: true,
+            fastDelivery: false,
             HomeCategory:"trendy",
 
         },
@@ -127,23 +126,20 @@ const products= [
             inStock: 2,
             fastDelivery: true,
             HomeCategory:"featured"
-            
-    
         },
         {
             id:10,
-            name : "Bottle MockUp-PS0 Version-1.0 ",
+            name : "Bottle MockUp-PS0 ",
             description: "lorem ipsum ",
             price:350,
             old_price: 450,
             currency :"$",
             image: "./images/img1.png",
-            category:"men",
+            category:"women",
             inStock: 2,
             fastDelivery: true,
             HomeCategory:"featured"
-            
-    
+
         }
     ]
 

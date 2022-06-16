@@ -17,6 +17,7 @@ export const Filter = () => {
     return (
       <div className='filter'>
           <span className='title'>Filter Products</span>
+          <hr/>
           <span>
          <div className="filter_items">
          <input type="radio" id="filter" name="decending" onChange={()=>
@@ -61,7 +62,7 @@ export const Filter = () => {
          </div>
          <div className="filter_items">
            
-         <button onClick={() =>
+         <button className='clearFilter' onClick={() =>
           productDispatch({
             type: "CLEAR_FILTERS",
           })

@@ -16,7 +16,7 @@ const Cart = () => {
           cart.reduce((acc, curr)=> acc + Number(curr.price)*curr.qty,0)
       );
   },[cart]);
-
+  let cat= cart;
   let CartLength= cart.length;
   console.log(CartLength);
   if(CartLength!=0){
@@ -45,7 +45,7 @@ const Cart = () => {
                               <br/>
                               <button onClick={()=>dispatch({type: "REMOVE_FROM_CART",payload: item,})}>Remove</button>
                           </td>
-                          <td><input type="number" value={item.qty} onChange={(e)=>dispatch({type:"CHANGE_CART_QTY",payload:{id:item.id,qty:e.target.value,}})}/></td>
+                          <td><input type="number" id='qtys' value={item.qty} onChange={(e)=>dispatch({type:"CHANGE_CART_QTY",payload:{id:item.id,qty:e.target.value,}})}/></td>
                           <td>
                               {item.price}
                           </td>

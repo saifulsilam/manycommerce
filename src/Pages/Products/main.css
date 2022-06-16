@@ -1,16 +1,16 @@
 .products{
     display: flex;
-   
-    color:white
+    color:white;
+   background-color: rgb(255, 255, 255);
+
 
 }
 .filters{
-   height: 30rem;
-   background-color: antiquewhite;
+   height: 50rem;
    margin-top: 5rem;
-   width: 20%;
-   margin-left: 2rem;
-   padding-left: 2rem;
+   width: 25%;
+   padding-left: 4rem;
+   padding-right: 2rem;
    
 }
 .ProductContainer{
@@ -18,10 +18,25 @@
     margin: 2rem;
     display: flex;
     flex-wrap: wrap;
+    margin-left: 0rem;
 }
 .ProductContainer .trend_col{
     margin: 1rem;
+    width: 25rem;
 }
 .trend_col h4{
     color: black;
+}
+.danger{
+    margin-top: -1rem;
+}
+.addtoCart{
+    margin-top: -2rem;
+}
+.fast_delivery{
+    color: rgb(245, 9, 9);
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-left: 6rem;
 }

@@ -1,0 +1,58 @@
+.product_detail{
+    display: flex;
+    margin: 5rem;
+}
+.product_image{
+    margin-left: 8rem;
+}
+.product_image img{
+    max-height: 40rem;
+}
+.product_content{
+    margin-left: 7rem;
+}
+.product_content .breadCum{
+    font-size: 1.5rem;
+    color:black;
+}
+.product_content h1{
+    font-size: 2rem;
+
+}
+.product_content h4{
+    margin-top: -1rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.product_content .sizes,.product_content .colors{
+    margin-bottom: 2rem;
+    
+}
+.product_content .colors{
+    margin-left: 2rem;
+}
+.product_content .addCart{
+    display: block;
+    background-color: rgb(223, 164, 93);
+    border: none;
+    padding: 0.7rem 1.5rem;
+    margin-top: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 3rem;
+    border-radius: 0.7rem;
+}
+.product_content .addCart:hover{
+    background-color: rgb(210, 223, 93);
+}
+.product_content h3{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.product_des{
+    font-size: 1.5rem;
+    width: 50rem;
+    margin-top: -2rem;
+    color: black;
+    font-weight: 400;
+}

@@ -23,19 +23,7 @@ const Tsection=({prod})=>{
                 <div class="trend_foo">
                 <p class="ratings">*****</p> 
                 </div>
-                {cart.some((p) => p.id === prod.id) ? (
-            <button
-            class="addCart"
-              onClick={() =>
-                dispatch({
-                  type: "REMOVE_FROM_CART",
-                  payload: prod,
-                })
-              }
-            >
-              Remove from Cart
-            </button>
-          ) : (
+                {cart.some((p) => p.id === prod.id) ?(<><button class="addCart" onClick={() => dispatch({type: "REMOVE_FROM_CART",payload: prod,})}>Remove from Cart </button></>) : (
             <button
             class="addCart"
               onClick={() =>

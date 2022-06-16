@@ -6,6 +6,7 @@ import Contact from "./Pages/Contact";
 import Product from "./Pages/Products";
 import Footer from "./Component/Footer";
 import Cart from "./Component/Cart";
+import SinglePost from "./Pages/SinglePage/SinglePost"
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/contact" element={<Contact/>} />
         <Route path="/product" element={<Product/>} />
         <Route path="/cart" element={<Cart/>} />
+        <Route path="/singlepost/:userid" element={<SinglePost/>} />
         {/* <Route path="/about" element={<About/>} /> */}
 
         {/* Error 404  */}

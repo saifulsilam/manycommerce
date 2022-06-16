@@ -40,15 +40,15 @@
     
 }
 .trendy_attribute{
-    margin-top: -2rem;
+    margin-top: -3rem;
 }
 .price_tag{
     display: flex;
-    margin-top: 2rem;
+    margin-top: -2rem;
 }
 .price_tag .old_price{
-   padding: 0.2rem 1rem;
-   background-color: yellow;
+   
+   color: black;
    text-decoration: line-through;
    font-size: 1.7rem;
    font-weight: 700;
@@ -74,7 +74,6 @@
  padding: 0.5rem 2rem;
  font-size: 1.2rem;
  font-weight: 700;
-
  border-radius: 0.5rem;
  background-color: antiquewhite;
  text-transform: uppercase;

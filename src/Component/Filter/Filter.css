@@ -1,9 +1,23 @@
+.filter{ 
+    margin-top: 3rem;
+    font-weight: 600;
+}
 .filter .title{
     color: black;
+    font-size: 1.8rem;
+   
 }
 .filter .filter_items{
-    color: red;
+    color: black;
     margin-top: 1rem;
     font-size: 1.4rem;
     font-weight: 400;
+}
+.clearFilter{
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    background-color: rgb(255, 236, 127);
+    border: none;
+    padding: 0.8rem 1rem;
+    cursor: pointer;
 }
