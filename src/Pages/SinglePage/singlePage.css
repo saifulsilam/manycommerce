@@ -36,7 +36,18 @@
     background-color: rgb(223, 164, 93);
     border: none;
     padding: 0.7rem 1.5rem;
-    margin-top: 2rem;
+    
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 3rem;
+    border-radius: 0.7rem;
+}
+.product_content .dangerBtn{
+    display: block;
+    background-color: rgb(223, 145, 93);
+    border: none;
+    padding: 0.7rem 1.5rem;
+    
     font-weight: 700;
     cursor: pointer;
     margin-bottom: 3rem;

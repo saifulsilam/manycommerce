@@ -20,6 +20,9 @@
     flex-wrap: wrap;
     margin-left: 0rem;
 }
+.ProductContainer .productTitle{
+    text-decoration: none;
+}
 .ProductContainer .trend_col{
     margin: 1rem;
     width: 25rem;
@@ -28,13 +31,34 @@
     color: black;
 }
 .danger{
+    display: block;
     margin-top: -1rem;
+    padding: 0.4rem 1.4rem;
+    background-color: rgba(255, 6, 6, 0.493);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: black;
 }
 .addtoCart{
+    display: block;
+    color: black;
     margin-top: -2rem;
+    padding: 0.4rem 1.4rem;
+    background-color: rgb(243, 212, 171);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
 }
+
 .fast_delivery{
-    color: rgb(245, 9, 9);
+    color: rgb(19, 18, 18);
     font-size: 1.6rem;
     font-weight: 600;
     margin-top: 1.5rem;

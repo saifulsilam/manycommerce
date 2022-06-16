@@ -6,11 +6,13 @@ import "./singlePage.css";
 const SinglePost =()=>{
     
     const {
-        state : {products},
+        state : {products,cart},
         dispatch,
+     
 
     } =CartState();
-    
+    let cartProduct=cart;
+ 
     let { userid } = useParams();
     let product=[];
     // const product =  products.find((product)=>product.id === usd);
@@ -24,7 +26,7 @@ const SinglePost =()=>{
           return item.catagory === cat;
       });
     //  get total price from quantity intput 
-    
+    console.log(cartProduct.length);
     return(
         
         <>
@@ -52,7 +54,35 @@ const SinglePost =()=>{
                     <option value="">Yellow</option>
                 </select>
                 {/* <input type="number" id="quantity" value={product.qty} onChange={(e)=>dispatch({type:"CHANGE_CART_QTY",payload:{id:product.id,qty:e.target.value,}})} placeholder="add the required quantity"/> */}
-                <button
+               
+                {cart.some((p) => p.id === product.id) ? (
+                    <button
+                     className='dangerBtn'
+                      onClick={() =>
+                        dispatch({
+                          type: "REMOVE_FROM_CART",
+                          payload: product,
+                        })
+                      }
+                    >
+                      Remove from Cart
+                    </button>
+                  ) : (
+                    <button
+                      className='addCart'
+                      onClick={() =>
+                        dispatch({
+                          type: "ADD_TO_CART",
+                          payload: product,
+                        })
+                      }
+                      disabled={!product.inStock}
+                    >
+                      {!product.inStock ? "Out of Stock" : "Add to Cart"}
+                    </button>
+                  )}
+          
+                {/* <button
                      className="addCart"
                       onClick={() =>
                         dispatch({
@@ -61,7 +91,7 @@ const SinglePost =()=>{
                         })
                       }
                       >ADD TO CART
-                      </button>
+                      </button> */}
                 <h3>Product Details <i class="fa fa-indent"></i></h3>
                 <br/>
                 <p className="product_des">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>

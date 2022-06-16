@@ -17,7 +17,7 @@ const ProductSection = ({prod}) => {
        <div class="trend_col" key={prod.id}>
             <div>
               <img src={prod.image} alt=""/>
-              <Link to={`/singlepost/${prod.id}`}><h4>{prod.name}</h4></Link>
+              <Link className='productTitle' to={`/singlepost/${prod.id}`}><h4>{prod.name}</h4></Link>
               
               
             </div>
