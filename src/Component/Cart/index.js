@@ -2,7 +2,7 @@
 import {CartState} from '../../Context/Context'
 import './Cart.css'
 import { useEffect, useState } from 'react'
-import {NavLink} from 'react-router-dom'
+import {Link, NavLink} from 'react-router-dom'
 
 const Cart = () => {
     const{
@@ -18,7 +18,7 @@ const Cart = () => {
   },[cart]);
   let cat= cart;
   let CartLength= cart.length;
-  console.log(CartLength);
+
   if(CartLength!=0){
       return(
         <div className='cart'>
@@ -41,7 +41,7 @@ const Cart = () => {
                               <img src={item.image} alt="" />
                           </td>
                           <td>
-                              <h4>{item.name}</h4> 
+                              <h4>{item.name}</h4>  
                               <br/>
                               <button onClick={()=>dispatch({type: "REMOVE_FROM_CART",payload: item,})}>Remove</button>
                           </td>
@@ -74,7 +74,7 @@ const Cart = () => {
                       <td>$50.00</td>
                   </tr>
               </table>
-              <button>Proceed to Checkout</button>
+              <button><Link to="../checkout" > Proceed to Checkout</Link></button>
           </div>
       </div>
 

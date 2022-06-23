@@ -4,20 +4,17 @@
     align-items: center;
     padding-bottom: 4rem;
 }
-.featured-product .header{
+.featured-product .featured_header{
     text-align: center;
 }
-.featured-product .sec_title{
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    line-height: 2rem;
-}
+
 .featured-product .little-des{
     font-size: 1.6rem;
     margin-top: -2rem;
 }
-.featured-product .title{
+.featured_header .featured_title{
     color:rgb(88, 84, 84) ;
+    margin-bottom: 1rem;
     
 }
 
@@ -34,6 +31,15 @@
     padding-left: 3rem;
     text-align: center;
     margin-left: 1rem;
+}
+.featured-content .title{
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    line-height: 2rem;
+    text-decoration: none;
+    color: black;
+   
 }
 .featured-content .old-price{
     text-decoration: line-through;

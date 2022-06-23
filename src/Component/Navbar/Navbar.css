@@ -5,9 +5,14 @@ html{
     scroll-behavior: smooth;
 }
 header{
-    max-width: 114rem;
-   
-    
+    max-width: 144rem;  
+}
+li{
+    display: inline-block;
+    padding-right: 0.7rem;
+}
+hr .border{
+    border-bottom: 0.5px solid rgb(223, 187, 187);
 }
 
 /* Top Navbar */
@@ -18,15 +23,13 @@ header{
     margin-left: 7rem;
     font-family: Poppins;
     font-size: 1.4rem;
+    padding-top: 1rem;
     
 }
- li{
-    display: inline-block;
-    padding-right: 0.7rem;
+.top-navbar .right-top{
+    text-align: right;
 }
-hr .border{
-    border-bottom: 0.5px solid rgb(223, 187, 187);
-}
+
 /* End Top Bar */
 
 .main-navbar{
@@ -37,30 +40,31 @@ hr .border{
     margin-bottom: 3rem;
 }
 .main-navbar .logo{
-    flex-basis: 20;
     padding-left: 2.4rem;
 }
 
 .main-navbar .menus{
-    flex-basis: 40;
-    align-items: flex-start;
     margin-right:6rem ;
     color: black;
     font-family: Poppins;
+    text-align: left;
 }
 .main-menu li:hover{
     
     text-decoration: none;
-    font-size: 2rem;
     color: rgb(90, 104, 31);
     font-weight: 50rem;
 }
+.main-menu li:active{
+    color: rgb(157, 255, 0);
+}
 .main-navbar .search{
-    flex-basis: 40;
+    
     margin-right:6rem ;
     font-size: 1.8rem;
     color: black;
     text-decoration: none;
+    text-align: right;
 }
 
 .main-navbar li{
@@ -75,7 +79,7 @@ hr .border{
     cursor: pointer;
 }
 .navLink:hover{
-    color: red;
+    color: rgb(16, 190, 45);
     cursor: pointer;
 }
 .navLink:active{

@@ -40,10 +40,6 @@
     background-color: rgb(253, 237, 17);
 }
 
-.cart-item button{
-    background-color: #ff6767;
-    border: none;
-}
 .cart-page tr>td{
   padding-left: 5rem;
 }
@@ -81,4 +77,11 @@ td a{
     background-color: #ee1717;
     color: #fff;
     overflow: hidden;
+}
+
+
+.cartRemove{
+    margin: 2rem;
+    padding: 0.9rem 1rem;
+    background-color: rgb(253, 237, 17);
 }

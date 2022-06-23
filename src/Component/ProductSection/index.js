@@ -10,26 +10,29 @@ const ProductSection = ({prod}) => {
     state: { cart },
     dispatch,
   } = CartState();
-  
-
+  let ratings="";
+  for(let i=0;i<5;i++){
+    ratings += "★";
+  }
   return (
     <div>
        <div class="trend_col" key={prod.id}>
             <div className='container'>
               <img src={prod.image} alt=""/>
-              <div class="top-left"><p class="old_price">{prod.currency}{prod.old_price}</p></div>
+              <div class="top-left"><p class="old_price">{prod.currency}{prod.old_price}</p></div>     
             </div>
-            <Link className='productTitle' to={`/singlepost/${prod.id}`}><h4>{prod.name}</h4></Link>
-              
+            <Link className='productTitle' to={`/singlepost/${prod.id}`}><h4>{prod.name}</h4></Link> 
+                         
             <div class="trendy_attribute">
-                <div class="price_tag">
+                 {prod.fastDelivery ? (
+                      <div className='fast_delivery'>Fast Delivery</div>
+                        ) : (
+                      <div className='fast_delivery'>4 days delivery</div>
+                    )}
+                    <p class="rating">{ratings}</p>
                   
-                  <p class="current_price">{prod.currency}{prod.price}</p>
-                  {prod.fastDelivery ? (
-                  <div className='fast_delivery'>Fast Delivery</div>
-                ) : (
-                  <div className='fast_delivery'>4 days delivery</div>
-                )}
+                <div class="price_tag">
+                  <p>{prod.currency}{prod.price}</p>
                 </div>
                
                 

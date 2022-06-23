@@ -2,6 +2,8 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { CartState } from "../../Context/Context";
 import "./singlePage.css";
+import RelatedProduct from '../../Component/RelatedProduct'
+import Checkout from "../../Component/Checkout";
 
 const SinglePost =()=>{
     
@@ -11,7 +13,8 @@ const SinglePost =()=>{
      
 
     } =CartState();
-    let cartProduct=cart;
+    let cartProduct=[];
+   cartProduct=cart;
  
     let { userid } = useParams();
     let product=[];
@@ -20,13 +23,9 @@ const SinglePost =()=>{
         let usd=Number(userid);
         return item.id === usd ;
       }); 
-      
-      let relatedProducts= products.filter(function(item){
-          let cat = product.catagory;
-          return item.catagory === cat;
-      });
-    //  get total price from quantity intput 
-    console.log(cartProduct.length);
+      let cat = product.catagory;
+    console.log("carrt" + cartProduct);
+
     return(
         
         <>
@@ -98,8 +97,10 @@ const SinglePost =()=>{
                 
             </section>
         </section>
+        <hr/>
         <section className="related_product">
-
+          <RelatedProduct category={cat}/>
+          <Checkout />
         </section>
         </>
         

@@ -19,7 +19,7 @@
     text-align: center;
     padding-bottom: 3rem;
 }
-.category-brand a{
+.category-brand .catBrandTitle{
     text-decoration: none;
     margin-left: 1rem;
     display: block;
@@ -31,29 +31,38 @@
     padding-left: 0.3rem;
     color: black;
 }
+.category-brand .arrow_right:hover{
+    padding-left: 0.3rem;
+    color: rgba(255, 47, 47, 0.787);
+}
 .category-brand .arrow_text{
     margin-top: -2rem;
     text-align: center;
 }
-.category-brand a h3{
+.category-brand .catBrandTitle h3{
     text-decoration: none;
     margin-top: 4rem;
     display: block;
     font-size: 1.9rem;
-    color: rgba(0, 0, 0, 0.979);
+    color: rgb(82, 168, 32);
+
     font-family: poppins;
-    font-weight: 200;
+    font-weight: 400;
 }
-.category-brand a h3:hover{
+.category-brand .catBrandTitle h3:hover{
     color: black;
 }
-.category-brand a img{
+.category-brand .catBrandImg img{
   
     width: 20rem;
     height: 16rem;
 }
-.category-brand a img:hover{
-    width: 22rem;
-    height: 18rem;
-    transition: 1s;
+.category-brand .arrow_text{
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.category-brand .arrow_text:hover{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(82, 168, 32);
 }

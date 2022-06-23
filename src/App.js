@@ -7,6 +7,7 @@ import Product from "./Pages/Products";
 import Footer from "./Component/Footer";
 import Cart from "./Component/Cart";
 import SinglePost from "./Pages/SinglePage/SinglePost"
+import Checkout from "./Component/Checkout";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
 
         {/* Error 404  */}
         {/* <Route path ="*" element={<Error/>} /> */}
+        <Route path="/checkout" element={<Checkout/>} />
       </Routes> 
 
       <Footer /> 

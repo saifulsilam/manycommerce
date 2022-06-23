@@ -7,21 +7,20 @@ const Tsection=({prod})=>{
     dispatch
   } = CartState();
     return(
-        <div class="trend_col" key={prod.id}>
+        <div class="trending_col" key={prod.id}>
             <div>
 
               <img src={prod.image} alt=""/>
               <h4>{prod.name}</h4>
             </div>
               
-            <div class="trendy_attribute">
-                <div class="price_tag">
-                  <p class="old_price">{prod.currency}{prod.old_price}</p>
-                  <p class="current_price">{prod.currency}{prod.price}</p>
-                
+            <div class="trending_attribute">
+                <div class="trending_price_tag">
+                  <p class="off_price">{prod.currency}{prod.old_price}</p>
+                  <p class="on_price">{prod.currency}{prod.price}</p>
                 </div>
-                <div class="trend_foo">
-                <p class="ratings">*****</p> 
+                <div class="trend_ratings">
+                <p class="trend_rating_item">*****</p> 
                 </div>
                 {cart.some((p) => p.id === prod.id) ?(<><button class="addCart" onClick={() => dispatch({type: "REMOVE_FROM_CART",payload: prod,})}>Remove from Cart </button></>) : (
             <button

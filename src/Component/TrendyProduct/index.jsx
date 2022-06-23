@@ -22,13 +22,14 @@ const TrendyProduct = () => {
   return (
     <>
     
-      <section class="trendy_product">
-        <div class="header">
-            <h2 className="sec_title">Trendy Products</h2> 
+      <section class="trending_product">
+        <div class="trending_header">
+            <h2 className="trending_title">Trendy Products</h2> 
             <p class="little_des">Got world most trendy products at your hand</p>
         </div>
-            
-           <div class="trendy_content">
+          
+
+           <div class="trending_content">
                 {
                   TrendProducts.map((prod)=>(
                     <Tsection prod={prod} key={prod.id} />

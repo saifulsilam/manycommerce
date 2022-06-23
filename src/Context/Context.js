@@ -1,4 +1,5 @@
 
+import { useSSRSafeId } from "@react-aria/ssr";
 import { createContext, useContext, useReducer } from "react";
 import products from "../Component/ProductData";
 import { cartReducer, productReducer } from "./Reducer";
@@ -26,16 +27,14 @@ const Context= ({children}) =>{
         products:product,
         cart:[],
     });
-   
-   
+
 
     const [productState, productDispatch] = useReducer(productReducer, {
         byStock: false,
         byFastDelivery: false,
         searchQuery: "",
       });
-
-
+         
       return(
         <Cart.Provider value={{state, dispatch, productState, productDispatch}}>
             {children}

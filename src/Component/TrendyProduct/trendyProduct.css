@@ -1,66 +1,67 @@
 
-.trendy_product{
+.trending_product{
     padding-top: 3rem;
     align-items: center;
     padding-bottom: 4rem;
     margin-right: 2rem;
 }
-.trendy_product .header{
+.trending_product .trending_header{
     text-align: center;
 }
-.trendy_product .sec_title{
+.trending_product .trending_title{
     font-size: 3rem;
     margin-bottom: 2rem;
 }
-.trendy_product .little_des{
+.trending_header .little_des{
     font-size: 1.6rem;
     margin-top: -2rem;
     margin-bottom: 5rem;
 }
 
-.trendy_content{
+/* Trending Product Listing*/
+.trending_content{
     display: flex;
     flex-wrap: wrap;
     max-width: 114rem;
     margin: 0 auto;
     padding-left: 5rem;
+    gap: 3px 2px;
 }
-.trendy_content .trend_col{
+.trending_content .trending_col{
     width: 25rem;
-    padding-left: 2rem;
     margin-bottom: 2rem;
+    margin-left: 1rem;
 }
-.trend_col img{
+.trending_col img{
     width: 25rem;
     height: 25rem;
 }
-.trend_col h4{
+.trending_col h4{
     font-size: 1.4rem;
     margin-top: 1rem;
-    
 }
-.trendy_attribute{
-    margin-top: -3rem;
+.trending_attribute{
+    margin-top: 2rem;   
 }
-.price_tag{
+.trending_price_tag{
     display: flex;
     margin-top: -2rem;
 }
-.price_tag .old_price{
+.trending_price_tag .off_price{
    
    color: black;
    text-decoration: line-through;
    font-size: 1.7rem;
    font-weight: 700;
 }
-.price_tag .current_price{
+.trending_price_tag .on_price{
     padding-left: 1rem;
     font-size: 1.7rem;
     color: black;
     font-weight: 700;
  }
 
-.trendy_attribute .ratings{
+.trend_ratings .trend_rating_item{
     color: rgb(255, 238, 0);
     font-size: 3rem;
     margin-top: -1rem;
@@ -70,7 +71,7 @@
     line-height: 2rem;
 
 }
-.trendy_attribute .addCart{
+.trending_attribute .addCart{
  padding: 0.5rem 2rem;
  font-size: 1.2rem;
  font-weight: 700;
@@ -80,7 +81,7 @@
  cursor: pointer;
  border-color: antiquewhite;;
 }
-.trendy_attribute .addCart:hover{
+.trending_attribute .addCart:hover{
     padding: 0.5rem 2rem;
     font-size: 1.2rem;
     font-weight: 700;

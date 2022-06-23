@@ -1,0 +1,21 @@
+.relatedProducts{
+    text-align: center;
+}
+.relatedProducts h1{
+    font-size: 2rem;
+}
+.relatedProduct{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10rem;
+    
+}
+.productItem{
+    width: 20rem;
+    margin-left: 1rem;
+    height: 20rem;
+}
+.productItem img{
+    width: 20rem;
+    height: 20rem;
+}
